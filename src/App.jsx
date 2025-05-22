@@ -1,7 +1,6 @@
 import Header from "./components/layout/Header";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
-import CardService from "./components/common/CardService";
 import Services from "./components/sections/Services";
 import Budget from "./components/sections/Budget";
 import Products from "./components/sections/Products";
@@ -20,6 +19,7 @@ function App() {
       </div>
       <Services />
       <Products />
+      <Budget />
     </>
   );
 }

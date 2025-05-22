@@ -76,21 +76,20 @@ const Products = () => {
             </div>
           );
         })}
+        {isMobile && (
+          <button
+            className="text-white text-xl font-inter flex flex-row justify-center items-center transition-all duration-300 ease-out hover:scale-105"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "Mostrar menos" : "Mostrar mais"}
+            <Dropdown
+              className={`transition-transform duration-300 ease-out ${
+                showAll ? "rotate-180" : "rotate-0"
+              }`}
+            />
+          </button>
+        )}
       </div>
-
-      {isMobile && (
-        <button
-          className="text-white text-xl font-inter flex flex-row justify-center items-center gap-1 transition-all duration-300 ease-out hover:scale-105"
-          onClick={() => setShowAll(!showAll)}
-        >
-          {showAll ? "Mostrar menos" : "Mostrar mais"}
-          <Dropdown
-            className={`transition-transform duration-300 ease-out ${
-              showAll ? "rotate-180" : "rotate-0"
-            }`}
-          />
-        </button>
-      )}
     </div>
   );
 };
