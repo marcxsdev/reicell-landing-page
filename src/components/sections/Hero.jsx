@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../common/Button";
 import Whatsapp from "../../assets/whatsapp.svg?react";
 import Carousel from "../common/Carousel";
