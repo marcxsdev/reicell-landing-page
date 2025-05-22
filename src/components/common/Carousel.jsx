@@ -11,15 +11,15 @@ const Carousel = ({
 
   const defaultImages = [
     {
-      src: "/carrossel1.jpg",
+      src: "/carousel/carrossel1.jpg",
       alt: "Descrição",
     },
     {
-      src: "carrossel2.jpg",
+      src: "/carousel/carrossel2.jpg",
       alt: "Descrição 2",
     },
     {
-      src: "/carrossel3.jpg",
+      src: "/carousel/carrossel3.jpg",
       alt: "Descrição 3",
     },
   ];
