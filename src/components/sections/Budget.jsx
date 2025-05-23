@@ -28,7 +28,7 @@ const Budget = () => {
 
   return (
     <div>
-      <h1 className="text-white text-center font-inter text-5xl font-black tracking-[-1.68px] mt-24 md:text-6xl md:tracking-[-2.4px] lg:text-7xl lg:tracking-[-2.88px]">
+      <h1 className="text-white text-center font-inter text-5xl font-black tracking-[-1.68px] md:text-6xl md:tracking-[-2.4px] lg:text-7xl lg:tracking-[-2.88px]">
         Quero um Orçamento
       </h1>
 

@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="flex flex-col gap-[24px] items-center justify-center w-full max-w-[1290px] mx-auto px-4 md:px-20 md:items-start lg:px-0">
+    <div className="flex flex-col gap-6 items-center justify-center w-full max-w-[1290px] mx-auto px-4 md:px-20 md:items-start lg:px-0">
       <h1 className="text-white font-inter text-5xl font-black tracking-[-1.68px] md:text-6xl md:text-left lg:text-7xl">
         Sobre Nós
       </h1>

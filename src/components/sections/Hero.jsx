@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <section>
-        <div className="flex flex-col justify-center items-center lg:hidden px-4 pt-20 pb-16">
+        <div className="flex flex-col justify-center items-center lg:hidden px-4 pt-8 pb-16">
           <h1 className="text-[#F3F3F3] text-center font-inter text-5xl font-black max-w-[333px] md:text-7xl md:max-w-[684px]">
             Seu celular novo de novo, em poucas horas!
           </h1>
@@ -20,6 +20,10 @@ const Hero = () => {
               icon={Whatsapp}
               text={"Solicitar Orçamento"}
               variant="primary"
+              onClick={() => {
+                const section = document.getElementById("budget");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
             />
           </div>
         </div>
@@ -40,6 +44,10 @@ const Hero = () => {
               icon={Whatsapp}
               text={"Solicitar Orçamento"}
               variant="primary"
+              onClick={() => {
+                const section = document.getElementById("budget");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
             />
           </div>
         </div>

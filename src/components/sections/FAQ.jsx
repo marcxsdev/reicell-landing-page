@@ -24,7 +24,7 @@ const FAQ = () => {
       question: "Onde nos encontrar?",
       answer: (
         <>
-          <p>
+          <p className="opacity-50">
             Temos duas unidades para melhor atender você!
             <br />
             Loja 1: Quadra 49 lote 20 Centro, Santo Antônio do Descoberto - GO
@@ -65,7 +65,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="bg-[#151414] py-10 px-4 md:px-8 lg:px-20">
+    <section className="bg-[#151414] mt-24 py-10 px-4 md:px-8 lg:px-20">
       <h2 className="text-white font-inter text-5xl font-black mb-14 text-center md:text-6xl lg:text-7xl">
         Perguntas Frequentes
       </h2>

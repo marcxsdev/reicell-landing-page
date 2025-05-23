@@ -20,14 +20,24 @@ const Header = () => {
               {["Sobre", "Serviços", "Produtos", "Orçamento"].map((item) => (
                 <li key={item}>
                   <a
-                    href="#"
+                    onClick={() => {
+                      const sectionMap = {
+                        Sobre: "about",
+                        Serviços: "services",
+                        Produtos: "products",
+                        Orçamento: "budget",
+                      };
+                      const sectionId = sectionMap[item];
+                      const section = document.getElementById(sectionId);
+                      section?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className={`
-            relative text-white font-inter text-lg md:text-base
-            after:block after:absolute after:left-0 after:-bottom-2
-            after:h-0.5 after:w-0 after:bg-[#02D562]
-            md:hover:after:w-full md:after:transition-all md:after:duration-300
-            md:active:text-[#02d562] active:text-[#02d562] transition-colors duration-200
-          `}
+    cursor-pointer relative text-white font-inter text-lg md:text-base
+    after:block after:absolute after:left-0 after:-bottom-2
+    after:h-0.5 after:w-0 after:bg-[#02D562]
+    md:hover:after:w-full md:after:transition-all md:after:duration-300
+    md:active:text-[#02d562] active:text-[#02d562] transition-colors duration-200
+  `}
                   >
                     {item}
                   </a>
@@ -39,7 +49,7 @@ const Header = () => {
       </div>
 
       <div className="flex flex-row gap-8 items-center">
-        <a href="#" target="_blank">
+        <a href="https://wa.me/556136264247" target="_blank">
           <Whatsapp className="w-8 h-8 text-white active:text-[#02d562] transition-colors duration-200 lg:hover:text-[#02d562] lg:hover:-translate-y-0.5 lg:transition-transform lg:duration-200" />
         </a>
 

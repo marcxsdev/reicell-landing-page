@@ -13,6 +13,8 @@ const Collapsible = ({ question, answer, isOpen, onClick }) => {
     }
   }, [isOpen]);
 
+  const isTextOnly = typeof answer === "string";
+
   return (
     <div className="w-full max-w-[333px] md:max-w-[684px] lg:max-w-[1126px] mx-auto mb-6">
       <button
@@ -34,8 +36,12 @@ const Collapsible = ({ question, answer, isOpen, onClick }) => {
         className="overflow-hidden transition-all duration-500 ease-in-out"
         style={{ maxHeight: `${height}px` }}
       >
-        <div className="mt-6 text-white opacity-[0.5] text-base md:text-xl leading-relaxed">
-          {answer}
+        <div className="mt-6 text-white text-base md:text-xl leading-relaxed">
+          {isTextOnly ? (
+            <span className="opacity-50 block">{answer}</span>
+          ) : (
+            answer
+          )}
         </div>
       </div>
     </div>
