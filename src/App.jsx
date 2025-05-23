@@ -4,6 +4,7 @@ import About from "./components/sections/About";
 import Services from "./components/sections/Services";
 import Budget from "./components/sections/Budget";
 import Products from "./components/sections/Products";
+import FAQ from "./components/sections/FAQ";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Services />
       <Products />
       <Budget />
+      <FAQ />
     </>
   );
 }

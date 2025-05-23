@@ -21,28 +21,28 @@ const Products = () => {
     {
       imgSrc: "/products/pelicula.webp",
       imgSize: "w-[189px] h-[189px]",
-      title: "Película de vidro",
+      title: "Películas de vidro",
       description:
         "Proteção de tela com películas diversas: fosca, 3D, privacidade e mais.",
     },
     {
       imgSrc: "/products/capa.jfif",
       imgSize: "w-[263px] h-[263px]",
-      title: "Capinha",
+      title: "Capinhas",
       description:
         "Estilo e proteção com capinhas em silicone, cases, SPACES, anti-impacto etc.",
     },
     {
       imgSrc: "/products/charger.jpg",
       imgSize: "w-[167px] h-[169px]",
-      title: "Carregador",
+      title: "Carregadores",
       description:
         "Carregadores rápidos, portáteis, por indução e muito mais modelos práticos.",
     },
     {
       imgSrc: "/products/fone.webp",
       imgSize: "w-[180px] h-[180px]",
-      title: "Fone",
+      title: "Fones",
       description:
         "Fones com fio, bluetooth, intra-auriculares e opções para todos os gostos.",
     },

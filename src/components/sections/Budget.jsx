@@ -9,7 +9,7 @@ const Budget = () => {
   const [error, setError] = useState("");
 
   const handleClick = (e) => {
-    e.preventDefault(); // evita o reload da página
+    e.preventDefault();
 
     if (!name || !model || !problem) {
       setError("Por favor, preencha todos os campos.");
@@ -19,7 +19,7 @@ const Budget = () => {
     setError("");
 
     const mensagem = `Olá, meu nome é ${name}, tenho um ${model}. ${problem}. Gostaria de solicitar um orçamento, por favor!`;
-    const whatsappLink = `https://wa.me/5599999999999?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/556136264247?text=${encodeURIComponent(
       mensagem
     )}`;
 
