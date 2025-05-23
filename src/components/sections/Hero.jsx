@@ -8,7 +8,7 @@ const Hero = () => {
       <section>
         <div className="flex flex-col justify-center items-center lg:hidden px-4 pt-8 pb-16">
           <h1 className="text-[#F3F3F3] text-center font-inter text-5xl tracking-[-1.92px] font-bold max-w-[333px] md:text-7xl md:max-w-[684px]">
-            Seu celular novo de novo, em poucas horas!
+            Seu celular novo de novo, em poucas bleh!
           </h1>
           <p className="text-white opacity-[0.5] text-center font-inter text-lg tracking-[-0.72px] max-w-[333px] mt-4 md:text-2xl md:max-w-[684px] md:mt-8">
             Resolvemos diversos problemas com rapidez, cuidado e peças de
